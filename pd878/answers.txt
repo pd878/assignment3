@@ -1,0 +1,39 @@
+IPython
+# 1
+import os
+help(os.path.abspath)
+os.path.abspath('os.path.abspath')
+[output]: '/home/ds-ga-1007/os.path.abspath'
+
+# 2
+#task a
+ls /etc | wc -l
+
+#task b
+import subprocess
+num = subprocess.check_output("ls /etc | wc -l", shell=True)
+num = int(num)
+
+# 3
+import math
+math.sqrt(num)
+[Output]: 15.264337522473747
+
+# 4  x**2 is the fastest.
+import numpy
+
+%timeit x**2
+10000000 loops, best of 3: 97.9 ns per loop
+
+%timeit x*x
+10000000 loops, best of 3: 86.6 ns per loop
+
+%timeit numpy.square(x)
+1000000 loops, best of 3: 2.01 µs per loop
+
+# 5 There are 24 magic cell commands
+lsmagic is used
+
+PyDev
+Q5. Console view is 
+Hello World!
